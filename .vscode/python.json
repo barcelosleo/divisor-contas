@@ -1,0 +1,17 @@
+{
+	"Nova View PyQt": {
+		"prefix": "view-class",
+		"body": [
+			"from PyQt5.QtWidgets import ${1:QMainWindow}",
+			"from PyQt5.QtCore import pyqtSlot",
+			"",
+			"from UI.${2:ViewName} import Ui_${2:ViewName}",
+			"",
+			"class ${2:ViewName}View(QDialog, Ui_${2:ViewName}):",
+			"\tdef __init__(self, *args, **kwargs):",
+			"\t\tsuper(${2:ViewName}View, self).__init__()",
+			"\t\tself.setupUi(self)",
+			"${3:\n\t\tself.setModal(True)}",
+		]
+	}
+}

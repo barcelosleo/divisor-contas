@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Divisor de Contas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Image.qrc">
+    <normaloff>:/icons/img/svg/home.svg</normaloff>:/icons/img/svg/home.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="novoRegistro">
+        <property name="text">
+         <string>Novo Registro Mensal</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icons/img/svg/add_row.svg</normaloff>:/icons/img/svg/add_row.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editarRegistro">
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icons/img/svg/edit_image.svg</normaloff>:/icons/img/svg/edit_image.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="gerarRelatorio">
+        <property name="text">
+         <string>Gerar Relatório</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icons/img/svg/neutral_trading.svg</normaloff>:/icons/img/svg/neutral_trading.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removerRegistro">
+        <property name="text">
+         <string>Remover</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icons/img/svg/remove_image.svg</normaloff>:/icons/img/svg/remove_image.svg</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="registrosMensais">
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Mês / Ano</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Total por Pessoa</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMoradores">
+    <property name="title">
+     <string>Moradores</string>
+    </property>
+    <addaction name="addMorador"/>
+    <addaction name="listarMoradores"/>
+   </widget>
+   <widget class="QMenu" name="menuTipoContas">
+    <property name="title">
+     <string>Tipos de Contas</string>
+    </property>
+    <addaction name="addTipoConta"/>
+    <addaction name="listarTipoConta"/>
+   </widget>
+   <addaction name="menuMoradores"/>
+   <addaction name="menuTipoContas"/>
+  </widget>
+  <action name="listarMoradores">
+   <property name="icon">
+    <iconset resource="Image.qrc">
+     <normaloff>:/icons/img/svg/list.svg</normaloff>:/icons/img/svg/list.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Listar</string>
+   </property>
+  </action>
+  <action name="addMorador">
+   <property name="icon">
+    <iconset resource="Image.qrc">
+     <normaloff>:/icons/img/svg/add_database.svg</normaloff>:/icons/img/svg/add_database.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+  </action>
+  <action name="listarTipoConta">
+   <property name="icon">
+    <iconset resource="Image.qrc">
+     <normaloff>:/icons/img/svg/list.svg</normaloff>:/icons/img/svg/list.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Listar</string>
+   </property>
+  </action>
+  <action name="addTipoConta">
+   <property name="icon">
+    <iconset resource="Image.qrc">
+     <normaloff>:/icons/img/svg/add_database.svg</normaloff>:/icons/img/svg/add_database.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

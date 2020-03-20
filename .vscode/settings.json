@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/usr/bin/python",
+    "pyqt-integration.pyuic.compile.filepath": "${ui_name}.py",
+    "pyqt-integration.pyuic.compile.addOptions": "--resource-suffix='' --import-from=. --resource-suffix='Resources'",
+    "pyqt-integration.pyrcc.compile.filepath": "${qrc_name}Resources.py"
+}

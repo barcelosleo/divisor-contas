@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListRoomMates</class>
+ <widget class="QDialog" name="ListRoomMates">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>343</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lista de Moradores</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Image.qrc">
+    <normaloff>:/icons/img/svg/manager.svg</normaloff>:/icons/img/svg/manager.svg</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="atualizar">
+       <property name="text">
+        <string>Atualizar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Image.qrc">
+         <normaloff>:/icons/img/svg/refresh.svg</normaloff>:/icons/img/svg/refresh.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="adicionarRegistro">
+       <property name="text">
+        <string>Adicionar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Image.qrc">
+         <normaloff>:/icons/img/svg/add_image.svg</normaloff>:/icons/img/svg/add_image.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editarRegistro">
+       <property name="text">
+        <string>Editar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Image.qrc">
+         <normaloff>:/icons/img/svg/edit_image.svg</normaloff>:/icons/img/svg/edit_image.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="removerRegistro">
+       <property name="text">
+        <string>Remover</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Image.qrc">
+         <normaloff>:/icons/img/svg/remove_image.svg</normaloff>:/icons/img/svg/remove_image.svg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="moradores">
+     <column>
+      <property name="text">
+       <string>Id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nome</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data de Inclusão</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="sair">
+     <property name="text">
+      <string>Fechar</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Image.qrc">
+       <normaloff>:/icons/img/svg/export.svg</normaloff>:/icons/img/svg/export.svg</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
