@@ -1,6 +1,6 @@
 {
     "app_name": "Divisor de Contas",
-    "author": "Leonardo",
+    "author": "Leonardo Barcelos",
     "main_module": "src/main/python/main.py",
-    "version": "0.0.0"
+    "version": "1.0.0"
 }

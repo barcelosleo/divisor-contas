@@ -84,9 +84,9 @@ class RelatorioRegistroMensalView(QDialog, Ui_RelatorioRegistroMensal):
         for morador in self.__moradores:
             self.__totais[i]['total_pessoa'] = self.__totais[i]['total_por_pessoa']
             self.__totais[i]['total_pessoa_pago'] = 0
-            emprestimos_de = Emprestimo.select().where(Emprestimo.de_id == morador.id & Emprestimo.registro_mensal_id == self.__registroMensal.id)
-            emprestimos_para = Emprestimo.select().where(Emprestimo.para_id == morador.id & Emprestimo.registro_mensal_id == self.__registroMensal.id)
-            contas = Conta().select().where(Conta.morador_id == morador.id & Conta.registro_mensal_id == self.__registroMensal.id)
+            emprestimos_de = Emprestimo.select().where((Emprestimo.de_id == morador.id) & (Emprestimo.registro_mensal_id == self.__registroMensal.id))
+            emprestimos_para = Emprestimo.select().where((Emprestimo.para_id == morador.id) & (Emprestimo.registro_mensal_id == self.__registroMensal.id))
+            contas = Conta().select().where((Conta.morador_id == morador.id) & (Conta.registro_mensal_id == self.__registroMensal.id))
 
             for emprestimo in emprestimos_de:
                 self.__totais[i]['total_pessoa'] += emprestimo.valor
